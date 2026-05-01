@@ -1,0 +1,41 @@
+{
+  "name": "BotifyX",
+  "description": "Botify X — your intelligent WhatsApp assistant with admin portal",
+  "keywords": ["whatsapp", "bot", "baileys"],
+  "stack": "container",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "env": {
+    "SESSION_ID": {
+      "description": "WhatsApp session ID. Generate this using the Admin Portal's Pairing page.",
+      "value": "",
+      "required": false
+    },
+    "ADMIN_USER": {
+      "description": "Admin portal username",
+      "value": "katson",
+      "required": false
+    },
+    "ADMIN_PASS": {
+      "description": "Admin portal password",
+      "value": "#jesusfuckingchrist#",
+      "required": false
+    },
+    "PREFIX": {
+      "description": "Bot command prefix",
+      "value": ".",
+      "required": false
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner WhatsApp number (with country code)",
+      "value": "",
+      "required": false
+    },
+    "MODE": {
+      "description": "Bot mode: public or private",
+      "value": "public",
+      "required": false
+    }
+  }
+}
